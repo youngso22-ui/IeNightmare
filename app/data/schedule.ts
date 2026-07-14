@@ -1,0 +1,32 @@
+export const schedule = [
+  {
+    id: 1,
+    date: "July 17, 2026",
+    time: "9:00 AM",
+    opponent: "TBD",
+    location: "Las Vegas, NV",
+    court: "Court 1",
+    status: "Upcoming",
+    score: "",
+  },
+  {
+    id: 2,
+    date: "July 17, 2026",
+    time: "2:00 PM",
+    opponent: "TBD",
+    location: "Las Vegas, NV",
+    court: "Court 3",
+    status: "Upcoming",
+    score: "",
+  },
+  {
+    id: 3,
+    date: "July 18, 2026",
+    time: "11:30 AM",
+    opponent: "TBD",
+    location: "Las Vegas, NV",
+    court: "Court 2",
+    status: "Upcoming",
+    score: "",
+  },
+];
