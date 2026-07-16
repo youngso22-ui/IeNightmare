@@ -113,7 +113,7 @@ export default function HeroComponent() {
       <div className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
 
         <img
-          src="/download.png"
+          src="/download.jpg"
           alt="IE Nightmares"
           className="w-56 drop-shadow-[0_0_60px_#22d3ee] transition duration-700 hover:scale-105 sm:w-72 md:w-[420px]"
         />

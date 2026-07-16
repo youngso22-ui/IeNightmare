@@ -12,9 +12,8 @@ export const players = [
     rpg: "7.0",
     apg: "2.0",
     image: "/players/Johnny-Lopez.jpg",
-    bio: "Explosive scoring guard with the ability to defend multiple positions and create offense."
+    bio: "Explosive scoring guard."
   },
-
   {
     slug: "cairo-cox",
     name: "Cairo Cox",
@@ -30,7 +29,6 @@ export const players = [
     image: "/players/Cairo-Cox.jpg",
     bio: ""
   },
-
   {
     slug: "desmond-evans",
     name: "Desmond Evans",
@@ -46,11 +44,10 @@ export const players = [
     image: "/players/Desmond-Evans.jpg",
     bio: ""
   },
-
   {
     slug: "devin-del-cid",
     name: "Devin Del-Cid",
-    number: "#13",
+    number: "#25",
     position: "Guard",
     height: "--",
     weight: "--",
@@ -59,15 +56,14 @@ export const players = [
     ppg: "--",
     rpg: "--",
     apg: "--",
-    image: "/players/devin-Del-Cid.jpg",
+    image: "/players/Devin-Del-Cid.jpg",
     bio: ""
   },
-
   {
     slug: "eddie-gallegos",
     name: "Eddie Gallegos",
-    number: "#11",
-    position: "Guard",
+    number: "#7",
+    position: "Forward",
     height: "--",
     weight: "--",
     gradYear: "--",
@@ -78,12 +74,11 @@ export const players = [
     image: "/players/Eddie-Gallegos.jpg",
     bio: ""
   },
-
   {
     slug: "jesse-garcia",
     name: "Jesse Garcia",
-    number: "#10",
-    position: "Guard",
+    number: "#24",
+    position: "Shooting Guard",
     height: "--",
     weight: "--",
     gradYear: "--",
@@ -94,12 +89,11 @@ export const players = [
     image: "/players/Jesse-Garcia.jpg",
     bio: ""
   },
-
   {
     slug: "johann-wainwright",
     name: "Johann Wainwright",
-    number: "#15",
-    position: "Forward",
+    number: "#2",
+    position: "Guard / Forward",
     height: "--",
     weight: "--",
     gradYear: "--",
@@ -110,11 +104,10 @@ export const players = [
     image: "/players/Johann-Wainwright.jpg",
     bio: ""
   },
-
   {
     slug: "noah-palma",
     name: "Noah Palma",
-    number: "#21",
+    number: "#11",
     position: "Forward",
     height: "--",
     weight: "--",
@@ -126,12 +119,11 @@ export const players = [
     image: "/players/Noah-Palma.jpg",
     bio: ""
   },
-
   {
     slug: "terrell-bass",
     name: "Terrell Bass",
-    number: "#0",
-    position: "Guard",
+    number: "#5",
+    position: "Forward",
     height: "--",
     weight: "--",
     gradYear: "--",
@@ -142,12 +134,11 @@ export const players = [
     image: "/players/Terrell-Bass.jpg",
     bio: ""
   },
-
   {
     slug: "zion-martinez",
     name: "Zion Martinez",
     number: "#3",
-    position: "Guard",
+    position: "Point Guard",
     height: "--",
     weight: "--",
     gradYear: "--",
@@ -156,6 +147,36 @@ export const players = [
     rpg: "--",
     apg: "--",
     image: "/players/Zion-Martinez.jpg",
+    bio: ""
+  },
+  {
+    slug: "dangelo-allen",
+    name: "D'Angelo Allen",
+    number: "#6",
+    position: "Guard / Forward",
+    height: "--",
+    weight: "--",
+    gradYear: "--",
+    hometown: "--",
+    ppg: "--",
+    rpg: "--",
+    apg: "--",
+    image: "/players/D'Angelo-Allen.jpg",
+    bio: ""
+  },
+  {
+    slug: "zayan-vennie",
+    name: "Zayan Vennie",
+    number: "#4",
+    position: "Guard",
+    height: "--",
+    weight: "--",
+    gradYear: "--",
+    hometown: "--",
+    ppg: "--",
+    rpg: "--",
+    apg: "--",
+    image: "/players/Zayan-Vennie.jpg",
     bio: ""
   }
 ];

@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { players } from "../../data/players";
+import { players } from "@/app/data/players";
 
 type Props = {
   params: Promise<{
@@ -20,13 +20,12 @@ export default async function PlayerPage({ params }: Props) {
     <main className="min-h-screen bg-black text-white">
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#08131c] to-black">
 
-        <div className="mx-auto max-w-7xl px-6 py-20">
+      <section className="border-b border-cyan-500/20 bg-gradient-to-b from-[#07131c] to-black py-20">
+
+        <div className="mx-auto max-w-7xl px-6">
 
           <div className="grid gap-14 lg:grid-cols-2">
-
-            {/* Player Image */}
 
             <div>
 
@@ -37,8 +36,6 @@ export default async function PlayerPage({ params }: Props) {
               />
 
             </div>
-
-            {/* Player Info */}
 
             <div className="flex flex-col justify-center">
 
@@ -58,7 +55,7 @@ export default async function PlayerPage({ params }: Props) {
 
                 <InfoCard title="Height" value={player.height} />
                 <InfoCard title="Weight" value={player.weight} />
-                <InfoCard title="Class" value={player.gradYear} />
+                <InfoCard title="Grad Year" value={player.gradYear} />
                 <InfoCard title="Hometown" value={player.hometown} />
 
               </div>
@@ -75,7 +72,7 @@ export default async function PlayerPage({ params }: Props) {
 
       <section className="mx-auto max-w-7xl px-6 py-20">
 
-        <h2 className="section-title mb-12">
+        <h2 className="mb-10 text-4xl font-black">
           Season Statistics
         </h2>
 
@@ -89,60 +86,19 @@ export default async function PlayerPage({ params }: Props) {
 
       </section>
 
-      {/* Biography */}
+      {/* Bio */}
 
-      <section className="mx-auto max-w-7xl px-6 pb-20">
+      <section className="mx-auto max-w-7xl px-6 pb-24">
 
-        <h2 className="section-title mb-10">
-          Player Biography
+        <h2 className="mb-10 text-4xl font-black">
+          Biography
         </h2>
 
-        <div className="card p-10">
+        <div className="rounded-3xl bg-zinc-900 p-10">
 
           <p className="text-lg leading-9 text-gray-300">
             {player.bio || "Biography coming soon."}
           </p>
-
-        </div>
-
-      </section>
-
-      {/* Highlight Video */}
-
-      <section className="mx-auto max-w-7xl px-6 pb-20">
-
-        <h2 className="section-title mb-10">
-          Highlight Video
-        </h2>
-
-        <div className="card flex h-[420px] items-center justify-center">
-
-          <p className="text-gray-500 text-xl">
-            Highlight Video Coming Soon
-          </p>
-
-        </div>
-
-      </section>
-
-      {/* Gallery */}
-
-      <section className="mx-auto max-w-7xl px-6 pb-24">
-
-        <h2 className="section-title mb-10">
-          Photo Gallery
-        </h2>
-
-        <div className="grid gap-6 md:grid-cols-3">
-
-          {[1,2,3].map((photo)=>(
-            <div
-              key={photo}
-              className="card aspect-square flex items-center justify-center"
-            >
-              Coming Soon
-            </div>
-          ))}
 
         </div>
 
@@ -155,51 +111,41 @@ export default async function PlayerPage({ params }: Props) {
 function InfoCard({
   title,
   value,
-}:{
-  title:string;
-  value:string;
-}){
-
-  return(
-
-    <div className="card p-6">
-
-      <p className="text-cyan-400 uppercase text-sm">
+}: {
+  title: string;
+  value: string;
+}) {
+  return (
+    <div className="rounded-2xl bg-zinc-900 p-6">
+      <p className="text-sm uppercase text-cyan-400">
         {title}
       </p>
 
       <p className="mt-2 text-xl font-bold">
         {value}
       </p>
-
     </div>
-
   );
-
 }
 
 function StatCard({
   label,
   value,
-}:{
-  label:string;
-  value:string;
-}){
-
-  return(
-
-    <div className="card p-10 text-center">
+}: {
+  label: string;
+  value: string;
+}) {
+  return (
+    <div className="rounded-2xl bg-zinc-900 p-10 text-center">
 
       <div className="text-6xl font-black text-cyan-400">
         {value}
       </div>
 
-      <div className="mt-4 text-gray-400 uppercase">
+      <div className="mt-4 uppercase text-gray-400">
         {label}
       </div>
 
     </div>
-
   );
-
 }

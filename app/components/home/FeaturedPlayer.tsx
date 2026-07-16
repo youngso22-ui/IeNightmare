@@ -46,7 +46,7 @@ export default function FeaturedPlayer() {
           </div>
 
           <Link
-            href="/roster/zayan-vennie"
+            href="/players/zayan-vennie"
             className="mt-10 inline-block rounded-xl bg-cyan-500 px-10 py-4 font-bold text-black transition hover:scale-105 hover:bg-cyan-400 hover:shadow-[0_0_35px_#22d3ee]"
           >
             VIEW PLAYER PROFILE
